@@ -7,14 +7,13 @@ const config = {
   context: path.join(__dirname, 'src'),
   entry: './index.js',
   output: {
-    path: path.join(__dirname, '/build/'),
+    path: path.join(__dirname, 'src'),
     filename: 'bundle.js',
-    publicPath: '/',
   },
   devtool: 'source-map',
   plugins: [
-    new webpack.DefinePlugin(),
-    new webpack.ProvidePlugin(),
+    // new webpack.DefinePlugin(),
+    // new webpack.ProvidePlugin(),
   ],
   module: {
     rules: [
@@ -45,6 +44,9 @@ const config = {
         loader: 'raw-loader',
       },
     ],
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, './src'),
   },
 };
 
