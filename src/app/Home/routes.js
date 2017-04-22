@@ -3,8 +3,8 @@ export default $stateProvider => (
   $stateProvider
     .state('home', {
       url: '/',
-      abstract: true,
-      templateUrl: 'Home.html',
+      template: require('./Home.html'), //eslint-disable-line
       controller: 'HomeController',
+      controllerAs: 'home',
     })
 );
