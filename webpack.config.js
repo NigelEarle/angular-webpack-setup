@@ -20,7 +20,7 @@ const config = {
       {
         test: /\.js$/,
         exclude: nodeModules,
-        loaders: 'babel-loader',
+        loaders: 'ng-annotate-loader!babel-loader',
         include: path.join(__dirname, 'src'),
       },
       {
