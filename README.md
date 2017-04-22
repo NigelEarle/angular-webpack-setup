@@ -1,7 +1,5 @@
 # Angular-Webpack-Setup
 
----
-
 #### Super basic boilerplate for setting up Angular 1.x & Webpack application.
 
 Run the following.
@@ -10,4 +8,4 @@ Run the following.
 
 `npm start`
 
-`localhost:8081`
+Navigate to `localhost:8081`
